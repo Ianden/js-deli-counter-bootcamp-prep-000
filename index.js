@@ -22,7 +22,7 @@ function currentLine(line) {
     lineList = `The line is currently: 1. ${line[0]}, `
 
     for (var i = 1; i < line.length; i++) {
-      lineList = `${lineList}${i + 1}: ${line[i]}, `
+      lineList = ` ${lineList}${i + 1}: ${line[i]},`
     }
   } else {
     lineList = "The line is currently empty."
