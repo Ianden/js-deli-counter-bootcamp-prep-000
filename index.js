@@ -12,7 +12,7 @@ function nowServing(line) {
   else {
     serving = "There is nobody waiting to be served!"
   }
-  
+
   return serving
 }
 
@@ -20,9 +20,12 @@ function currentLine(line) {
   var lineList
   if (line.length > 0) {
     lineList = `The line is currently: 1. ${line[0]}, `
-    
+
     for (var i = 1; i <= line.length + 1; i++) {
       lineList = `${lineList}${i}: ${lineList[i]} `
     }
+  } else {
+    lineList = "The line is currently empty."
   }
+  return lineList
 }
