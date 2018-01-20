@@ -21,7 +21,7 @@ function currentLine(line) {
   if (line.length > 0) {
     lineList = `The line is currently: 1. ${line[0]}, `
 
-    for (var i = 1; i <= line.length; i++) {
+    for (var i = 1; i < line.length; i++) {
       lineList = `${lineList}${i + 1}: ${line[i]}, `
     }
   } else {
