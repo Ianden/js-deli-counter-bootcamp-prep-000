@@ -16,3 +16,13 @@ function nowServing(line) {
   return serving
 }
 
+function currentLine(line) {
+  var lineList
+  if (line.length > 0) {
+    lineList = `The line is currently: 1. ${line[0]}, `
+    
+    for (var i = 1; i <= line.length + 1; i++) {
+      lineList = `${lineList}${i}: ${lineList[i]} `
+    }
+  }
+}
